@@ -1,0 +1,203 @@
+.banner-cta {
+  background: url("../assets/banner-cta.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-cta:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 400px solid #fff;
+  border-right: 100px solid transparent;
+  left: calc((100% - 1350px) / 2);
+  top: 0;
+  position: absolute;
+}
+.banner-cta:after {
+  content: "";
+  height: 400px;
+  width: calc((100% - 1350px) / 2);
+  left: 0;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner-cta h2 {
+  font-size: 30px;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+.banner-cta .content-banner-cta {
+  padding-left: 200px;
+  align-items: center;
+  padding-right: 100px;
+}
+.banner-cta .content-banner-cta * {
+  color: #fff;
+}
+.banner-cta .content-banner-cta .text {
+  max-width: 600px;
+}
+
+.slider-stats {
+  margin-right: calc((100% - 1350px) / 2);
+  position: relative;
+  min-height: 550px;
+  margin-top: 130px;
+}
+.slider-stats .container {
+  padding-left: calc((100% - 1300px) / 2);
+}
+.slider-stats:after {
+  content: "";
+  background: url("../assets/big-s.svg") no-repeat top -100px right -115px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 600px;
+  height: 700px;
+}
+.slider-stats .item {
+  height: 550px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.slider-stats .item:before {
+  content: "";
+  position: absolute;
+  height: 550px;
+  width: 70%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.01) 99%, rgba(0, 0, 0, 0) 100%);
+}
+.slider-stats .item .content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slider-stats .item .content h3 {
+  font-size: 50px;
+  line-height: 55px;
+  color: #fff;
+  max-width: 40%;
+  font-family: "albert-regular";
+}
+.slider-stats .item .content .btn {
+  margin-top: 80px;
+}
+.slider-stats .slick-prev, .slider-stats .slick-next {
+  background: url("../assets/arrow-prev.svg") no-repeat center center;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  position: absolute;
+  z-index: 4;
+  text-indent: -3000px;
+  border: 0;
+  left: calc((100% - 1090px) / 2);
+  cursor: pointer;
+}
+.slider-stats .slick-next {
+  left: calc((100% - 980px) / 2);
+  background: url("../assets/arrow-next.svg") no-repeat center center;
+}
+.slider-stats .stats {
+  padding: 80px 0;
+  background-color: #000;
+}
+.slider-stats .stats * {
+  color: #fff;
+}
+.slider-stats .stats h2 {
+  padding-bottom: 60px;
+}
+.slider-stats .stats h3 {
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 25px;
+}
+.slider-stats .stats p {
+  margin-right: 130px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+.services {
+  padding: 100px 0;
+  align-items: center;
+}
+.services .title-services {
+  max-width: 550px;
+  padding-right: 80px;
+}
+.services .item-service {
+  margin-bottom: 30px;
+}
+.services .item-service .content {
+  margin-left: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.slider-multimedia {
+  position: relative;
+  min-height: 570px;
+}
+.slider-multimedia:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 570px solid #fff;
+  border-left: 200px solid transparent;
+  right: calc((100% - 1350px) / 2);
+  top: 0;
+  position: absolute;
+}
+.slider-multimedia:after {
+  content: "";
+  height: 570px;
+  width: calc((100% - 1350px) / 2);
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.slider-multimedia .item {
+  height: 570px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.intro-service {
+  padding-top: 200px;
+}
+.intro-service .content-service {
+  max-width: 400px;
+}
+.intro-service .image-service {
+  max-height: 550px;
+}
+.intro-service .image-service img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=components.css.map */
