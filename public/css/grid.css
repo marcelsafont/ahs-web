@@ -60,4 +60,13 @@ html {
   align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .d-flex > div {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=grid.css.map */

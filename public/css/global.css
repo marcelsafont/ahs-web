@@ -6,6 +6,24 @@
   z-index: 3;
   padding-bottom: 20px;
 }
+#header .nav-mobile {
+  display: none;
+  position: relative;
+  width: 40px;
+  margin-right: 10px;
+  text-align: right;
+}
+#header .nav-mobile span {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+}
+#header .nav-mobile span:nth-child(2) {
+  width: 35px;
+  top: 5px;
+}
 #header.sticky {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   background-color: #fff;
@@ -176,6 +194,53 @@
   padding-bottom: 20px;
   max-width: 230px;
   border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 991px) {
+  .front-page {
+    background-position: top left 60px;
+    background-size: 400px 400px;
+  }
+  .front-page .intro-home .shortcuts {
+    margin-top: 60px;
+  }
+  .front-page .intro-home .shortcuts .item .content {
+    max-width: 100%;
+  }
+  .front-page .intro-home .content-intro {
+    padding-top: 180px;
+  }
+  .front-page .intro-home .content-intro h1 {
+    font-size: 40px;
+  }
+  #header .d-flex {
+    justify-content: space-between;
+  }
+  #header .nav.main-menu .menus-block, #header .presu {
+    display: none;
+  }
+  #header .nav-mobile {
+    display: block;
+  }
+  #header .nav--logo {
+    width: 150px;
+  }
+  #header .nav--logo img {
+    max-width: 100%;
+  }
+  #footer:after, #footer:before {
+    display: none;
+  }
+  #footer .info-footer {
+    padding: 0;
+  }
+  #footer .container {
+    background-position: left 20px top -20px !important;
+    background-size: 150px 150px;
+  }
+  #footer .container .menus {
+    padding-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

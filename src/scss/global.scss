@@ -1,5 +1,22 @@
 #header{
-
+  .nav-mobile{
+    display:none;
+    position: relative;
+    width:40px;
+    margin-right:10px;
+    text-align: right;
+    span{
+      position:absolute;
+      display:inline-block;
+      width:30px;
+      height:2px;
+      background-color:#000;
+      &:nth-child(2){
+        width:35px;
+        top:5px;
+      }
+    }
+  }
   &.sticky{
     box-shadow: 0px 3px 6px #00000029;
     background-color:#fff;
@@ -201,4 +218,60 @@
     }
   }
   
+}
+
+@media screen and (max-width:991px){
+  .front-page{
+    background-position: top left 60px;
+    background-size:400px 400px;
+    .intro-home{
+      .shortcuts{
+        margin-top:60px;
+        .item{
+          .content{
+            max-width:100%;
+          }
+        }
+      }
+      .content-intro{
+        padding-top:180px;
+        h1{
+          font-size:40px;
+        }
+      }
+    }
+  }
+ 
+  #header{
+    .d-flex{
+      justify-content: space-between;
+    }
+    .nav.main-menu .menus-block, .presu{
+      display:none;
+    }
+    .nav-mobile{
+      display:block;
+    }
+    .nav--logo{
+      width:150px;
+      img{
+        max-width:100%;
+      }
+    }
+  }
+  #footer{
+    &:after, &:before{
+      display:none;
+    }
+    .info-footer{
+      padding:0;
+    }
+    .container{
+      background-position: left 20px top -20px!important;
+      background-size:150px 150px;
+      .menus{
+        padding-top:100px;
+      }
+    }
+  }
 }
